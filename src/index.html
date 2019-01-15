@@ -2,15 +2,46 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>EncriptLove</title>
+    <link rel="stylesheet" href="style.css"/>
   </head>
   <body>
     <div id="root">
-      <h1>Hola mundo!</h1>
-      <p> Mi primer cambio </p>
-      <p> Subir cambio </p>
+      <header>
+      <h1>Tengo algo que decirte!</h1>
+      <div>
+        <p class="inst"> Instrucciones </p>
+      </div>
+
+<!--Creamos un espacio para elegir el offset-->
+        <div>
+        <p>Elige el numero de caracteres</p>
+    <input type="number" id="offset" name= "off">
     </div>
+
+  <!--Creamos espacio para ingresar mensaje-->
+      <section>
+        <form id="message" name="message">
+      <p>Ingresa tu mensaje secreto</p>
+      <input type= "text" id="mensaje">
+    </form>
+    </section>
+
+    <!--Creamos espacio para que devuelva el mensaje cifrado o descifrado-->
+    <section>
+      <form id="message" name="message">
+    <p>Tu mensaje</p>
+    <input type= "text" id="mensaje">
+  </form>
+  </section>
+
+  <!--Creamos un boton con la funcion para guardar el mensaje a cifrar-->
+    <div class="choose">
+      <button class="button" id="a" type="button" onclick="cifrar()"> Cifrar</button>
+      <!--Creamos un boton con la funcion para guardar el mensaje a descifrar-->
+      <button class="button" id="b" type="button" onclick="dcifrar()"> Descifrar</button>
+    </div>
+    
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>

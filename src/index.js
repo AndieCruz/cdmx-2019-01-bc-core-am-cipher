@@ -1,6 +1,5 @@
 //Variables que guardan el valor de mis ID's
 const mensajeClean = document.getElementById("boxMessage");
-const insert= document.getElementById("message");
 const num= document.getElementById("offset");
 const button= document.getElementById("a");
 const buttond= document.getElementById("b");

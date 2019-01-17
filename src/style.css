@@ -1,9 +1,18 @@
 body{
-  background: #0A2342;
+  background: #732C2C;
 }
 
+h1 {
+  color: #BAD9B5;
+}
 
+.texto{
+  color: #420C14;
+}
 
+#message{
+  color: #EFF7CF;
+}
 .acordeon input {
     display: none;
 }
@@ -34,12 +43,6 @@ body{
 }
 
 /*
-F9C80E
-F86624
-EA3546
-662E9B
-43BCCD
 
-CCC9A1,F0FFCE,C57B57,1E2D2F,041F1E
 EFF7CF,BAD9B5,ABA361,732C2C,420C14
 */

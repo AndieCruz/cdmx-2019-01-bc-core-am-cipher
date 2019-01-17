@@ -21,22 +21,22 @@
             sea cifrado. Después escribe tu mensaje secreto y da click en el botón "CIFRAR". Listo,
             ya tienes un mensaje de amor secreto listo para enviarse. Si quieres descifrar algún mensaje
             amor que te enviaron, pide a tu crush que te indique el numero de espacios que ingreso y escribe
-            tu mensaje cifrado, después da click en el botón "DESCIFRAR" y así sabrás el mensaje secreto
-            que te enviaron. ¡Que nadie se entere! .</p>
+            tu mensaje cifrado, después da click en el botón "DESCIFRAR" y así sabrás el mensaje secreto.
+            Para empezar de nuevo solo da click en "RESET". ¡Sigue enviando mensajes de amor y que nadie se entere!</p>
             </div>
 </div>
 
 
 <!--Creamos un espacio para elegir el offset-->
         <div>
-        <p>Elige el numero de caracteres</p>
+        <p class="texto">Elige el numero de caracteres</p>
     <input type="number" id="offset" name= "off" min="1" max="100">
     </div>
 
   <!--Creamos espacio para ingresar mensaje-->
       <section>
         <form id="secretMessage" >
-      <p>Ingresa tu mensaje secreto</p>
+      <p class="texto">Ingresa tu mensaje secreto</p>
       <textarea rows="4" cols="50" id="boxMessage" name="box" ></textarea>
     </form>
     </section>
@@ -51,7 +51,7 @@
     <!--Creamos espacio para que devuelva el mensaje cifrado o descifrado-->
     <section>
       <form >
-    <p>Tu mensaje es: <span id="message"></span> </p>
+    <p class="texto">Tu mensaje es: <span id="message"></span> </p>
 
   </form>
   </section>

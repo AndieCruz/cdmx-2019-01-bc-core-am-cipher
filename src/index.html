@@ -7,26 +7,22 @@
   </head>
   <body>
     <div id="root">
-      <header>
+
       <h1>¡Tengo algo que decirte!</h1>
-</header>
-      <!--Ejemplo
-      <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-left-align">
-      Open Section 1</button>
-      <div id="Demo1" class="w3-container w3-hide">
-  <p>Some text..</p>
-</div>
--->
+
+
 <!--Agregamos las instrucciones-->
 <div class="acordeon">
             <div class="acordeonItem">
                 <input type="radio" name="acordeon" id="item1">
                 <label for="item1" class="acordeonTitulo">Instrucciones</label>
                 <p class="acordeonContenido">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Nobis quod dolorem nam iste laudantium doloremque perspiciatis
-            assumenda, corporis minima, eligendi molestiae dolorum facere iure
-            cum excepturi inventore expedita magni dolores.</p>
+            Para mandar mensajes de amor, primero debes elegir el numero de espacios para que tu mensaje
+            sea cifrado. Después escribe tu mensaje secreto y da click en el botón "CIFRAR". Listo,
+            ya tienes un mensaje de amor secreto listo para enviarse. Si quieres descifrar algún mensaje
+            amor que te enviaron, pide a tu crush que te indique el numero de espacios que ingreso y escribe
+            tu mensaje cifrado, después da click en el botón "DESCIFRAR" y así sabrás el mensaje secreto
+            que te enviaron. ¡Que nadie se entere! .</p>
             </div>
 </div>
 
@@ -61,8 +57,7 @@
   </section>
 
   <!--Creamos un boton para resetear-->
-  <button class="button" id="b" type="button" onclick="reset()"> RESET</button>
-  </div>
+  <button class="button" id="reset" type="button"> RESET</button>
 
     <script src="cipher.js"></script>
     <script src="index.js"></script>

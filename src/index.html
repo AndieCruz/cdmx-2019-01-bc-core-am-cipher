@@ -8,41 +8,64 @@
   <body>
     <div id="root">
       <header>
-      <h1>Tengo algo que decirte!</h1>
-      <div>
-        <p class="inst"> Instrucciones </p>
-      </div>
+      <h1>¡Tengo algo que decirte!</h1>
+</header>
+      <!--Ejemplo
+      <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-left-align">
+      Open Section 1</button>
+      <div id="Demo1" class="w3-container w3-hide">
+  <p>Some text..</p>
+</div>
+-->
+<!--Agregamos las instrucciones-->
+<div class="acordeon">
+            <div class="acordeonItem">
+                <input type="radio" name="acordeon" id="item1">
+                <label for="item1" class="acordeonTitulo">Instrucciones</label>
+                <p class="acordeonContenido">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Nobis quod dolorem nam iste laudantium doloremque perspiciatis
+            assumenda, corporis minima, eligendi molestiae dolorum facere iure
+            cum excepturi inventore expedita magni dolores.</p>
+            </div>
+</div>
+
 
 <!--Creamos un espacio para elegir el offset-->
         <div>
         <p>Elige el numero de caracteres</p>
-    <input type="number" id="offset" name= "off">
+    <input type="number" id="offset" name= "off" min="1" max="100">
     </div>
 
   <!--Creamos espacio para ingresar mensaje-->
       <section>
-        <form id="message" name="message">
+        <form id="secretMessage" >
       <p>Ingresa tu mensaje secreto</p>
-      <input type= "text" id="mensaje">
+      <textarea rows="4" cols="50" id="boxMessage" name="box" ></textarea>
     </form>
     </section>
 
+    <!--Creamos un boton con la funcion para guardar el mensaje a cifrar-->
+      <div class="choose">
+        <button class="button" id="a"> Cifrar</button>
+        <!--Creamos un boton con la funcion para guardar el mensaje a descifrar-->
+        <button class="button" id="b"> Descifrar</button>
+      </div>
+
     <!--Creamos espacio para que devuelva el mensaje cifrado o descifrado-->
     <section>
-      <form id="message" name="message">
-    <p>Tu mensaje</p>
-    <input type= "text" id="mensaje">
+      <form >
+    <p>Tu mensaje es: <span id="message"></span> </p>
+
   </form>
   </section>
 
-  <!--Creamos un boton con la funcion para guardar el mensaje a cifrar-->
-    <div class="choose">
-      <button class="button" id="a" type="button" onclick="cifrar()"> Cifrar</button>
-      <!--Creamos un boton con la funcion para guardar el mensaje a descifrar-->
-      <button class="button" id="b" type="button" onclick="dcifrar()"> Descifrar</button>
-    </div>
-    
+  <!--Creamos un boton para resetear-->
+  <button class="button" id="b" type="button" onclick="reset()"> RESET</button>
+  </div>
+
     <script src="cipher.js"></script>
     <script src="index.js"></script>
+  </div>
   </body>
 </html>

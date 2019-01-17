@@ -1,0 +1,47 @@
+body{
+  background: #0A2342;
+}
+h1{
+  background: rosewhite;
+}
+
+
+.acordeon input {
+    display: none;
+}
+
+.acordeonTitulo {
+    display: block;
+    padding: 5px;
+    background: #84BC9C;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+.acordeonTitulo:hover {
+    background: #2CA58D;
+    color: black;
+}
+
+.acordeonContenido {
+    height: 0;
+    overflow: hidden;
+    transition: all 0.2s;
+    color: white;
+}
+
+.acordeon input:checked ~ .acordeonContenido{
+    height: auto;
+    margin: 10px 0;
+}
+
+/*
+F9C80E
+F86624
+EA3546
+662E9B
+43BCCD
+
+CCC9A1,F0FFCE,C57B57,1E2D2F,041F1E
+EFF7CF,BAD9B5,ABA361,732C2C,420C14
+*/

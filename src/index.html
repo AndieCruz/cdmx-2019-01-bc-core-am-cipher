@@ -4,9 +4,11 @@
     <meta charset="utf-8">
     <title>EncriptLove</title>
     <link rel="stylesheet" href="style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Abel|Ubuntu+Condensed" rel="stylesheet">
   </head>
   <body>
     <div id="root">
+      <center>
 
       <h1>¡Tengo algo que decirte!</h1>
 
@@ -17,12 +19,12 @@
                 <input type="radio" name="acordeon" id="item1">
                 <label for="item1" class="acordeonTitulo">Instrucciones</label>
                 <p class="acordeonContenido">
-            Para mandar mensajes de amor, primero debes elegir el numero de espacios para que tu mensaje
+            Elije el numero de espacios para que tu mensaje
             sea cifrado. Después escribe tu mensaje secreto y da click en el botón "CIFRAR". Listo,
-            ya tienes un mensaje de amor secreto listo para enviarse. Si quieres descifrar algún mensaje
-            amor que te enviaron, pide a tu crush que te indique el numero de espacios que ingreso y escribe
+            ya tienes un mensaje de amor secreto listo para enviar. Si quieres descifrar algún mensaje,
+            pide a tu crush que te indique el numero de espacios que ingreso y escribe
             tu mensaje cifrado, después da click en el botón "DESCIFRAR" y así sabrás el mensaje secreto.
-            Para empezar de nuevo solo da click en "RESET". ¡Sigue enviando mensajes de amor y que nadie se entere!</p>
+            Para empezar de nuevo solo da click en "RESET". <i><b>¡Sigue enviando mensajes de amor y que nadie se entere!</i></b></p>
             </div>
 </div>
 
@@ -30,14 +32,14 @@
 <!--Creamos un espacio para elegir el offset-->
         <div>
         <p class="texto">Elige el numero de caracteres</p>
-    <input type="number" id="offset" name= "off" min="1" max="100">
+    <input class="caja" type="number" id="offset" name= "off"  min="1" max="100">
     </div>
 
   <!--Creamos espacio para ingresar mensaje-->
       <section>
         <form id="secretMessage" >
       <p class="texto">Ingresa tu mensaje secreto</p>
-      <textarea rows="4" cols="50" id="boxMessage" name="box" ></textarea>
+      <textarea class="caja" rows="4" cols="50" id="boxMessage" name="box" ></textarea>
     </form>
     </section>
 
@@ -51,14 +53,16 @@
     <!--Creamos espacio para que devuelva el mensaje cifrado o descifrado-->
     <section>
       <form >
-    <p class="texto">Tu mensaje es: <span id="message"></span> </p>
+    <p class="texto">Tu mensaje es: <br> <span id="message"></span> </p>
 
   </form>
   </section>
 
   <!--Creamos un boton para resetear-->
+  <div>
   <button class="button" id="reset" type="button"> RESET</button>
-
+</div>
+</center>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </div>

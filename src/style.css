@@ -4,15 +4,53 @@ body{
 
 h1 {
   color: #BAD9B5;
+  font-family: "Abel";
 }
 
 .texto{
   color: #420C14;
+  font-family: "Ubuntu Condensed";
+  font-size: 20px;
 }
 
 #message{
   color: #EFF7CF;
 }
+
+.caja{
+  background-color: #ABA361;
+  font-family: "Ubuntu Condensed";
+  border-radius: 5px;
+  border: none;
+  font-size: 20px;
+  color: #420C14;
+  padding: 10px;
+
+}
+
+#offset{
+  width: 100px;
+  height: 25px;
+  text-align: center;
+
+}
+.button{
+  background-color: #BAD9B5;
+  color: #420C14;
+  font-family: "Abel";
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.button:hover{
+  background-color: #420C14;
+  color: #BAD9B5;
+  border: none;
+
+}
+
 .acordeon input {
     display: none;
 }
@@ -24,6 +62,8 @@ h1 {
     color: white;
     font-size: 20px;
     cursor: pointer;
+    font-family: "Abel";
+    border-radius: 5px;
 }
 .acordeonTitulo:hover {
     background: #2CA58D;
@@ -34,12 +74,15 @@ h1 {
     height: 0;
     overflow: hidden;
     transition: all 0.2s;
-    color: white;
+    color: #EFF7CF;
+    font-family: "Ubuntu Condensed";
+    text-align: justify;
 }
+
 
 .acordeon input:checked ~ .acordeonContenido{
     height: auto;
-    margin: 10px 0;
+    margin: 5px 0;
 }
 
 /*

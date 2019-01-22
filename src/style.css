@@ -1,16 +1,25 @@
 body{
-  background: #732C2C;
+  background-image: url("images/backGround.png");
 }
 
 h1 {
-  color: #BAD9B5;
-  font-family: "Abel";
+  color: #EFF7CF;
+  font-family: "Francois One";
+  font-size: -webkit-xxx-large;
+}
+
+.logo{
+  width: auto;
+  height: 150px;
+  position: relative;
+  display: block;
+  margin: auto;
 }
 
 .texto{
-  color: #420C14;
-  font-family: "Ubuntu Condensed";
-  font-size: 20px;
+  color: white;
+  font-family: "Unica One";
+  font-size: medium;
 }
 
 #message{
@@ -56,14 +65,13 @@ h1 {
 }
 
 .acordeonTitulo {
-    display: block;
-    padding: 5px;
-    background: #84BC9C;
-    color: white;
-    font-size: 20px;
-    cursor: pointer;
-    font-family: "Abel";
-    border-radius: 5px;
+  padding: 7px;
+  background: #420C14;
+  color: white;
+  font-size: x-large;
+  cursor: pointer;
+  font-family: "Abel";
+  border-radius: 5px;
 }
 .acordeonTitulo:hover {
     background: #2CA58D;

@@ -5,7 +5,7 @@
     <title>EncriptLove</title>
     <link rel="stylesheet" href="style.css"/>
     <link href="https://fonts.googleapis.com/css?family=Abel|Ubuntu+Condensed" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Francois+One|Unica+One"" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Francois+One|Unica+One" rel="stylesheet">
   </head>
   <body>
     <header><img src="images/logo.png" alt="TripBack" class="logo"></header>
@@ -19,53 +19,51 @@
                 <input type="radio" name="acordeon" id="item1">
                 <label for="item1" class="acordeonTitulo">Instrucciones</label>
                 <p class="acordeonContenido">
-            Para cifrar: <br>
-            Elije el numero de espacios para que tu mensaje sea secreto. <br>
-            Escribe el mensaje y da click en "CIFRAR". Listo, ya tienes un mensaje de amor para tu infiel secreto
-            listo para enviar. <br>
+            Ingresa el número de cliente. <br>
+            Escribe los datos de la reservación y da click en "CIFRAR".
+            así creamos datos intransferibles para nuestros clientes. <br>
             Para descifrar: <br>
-            Pide a tu crush que te indique el numero de espacios que ingreso <br>
-            Escribe tu mensaje cifrado, después da click en "DESCIFRAR" y así sabrás el mensaje secreto.
-            Para empezar de nuevo solo da click en "RESET". <br>
-            <i>¡Sigue enviando mensajes de amor y que nadie se entere!</i></p>
+            Para saber la reservación, ingresa los datos con el número de cliente, <br>
+            da click en "DESCIFRAR". <br>
+            Para empezar de nuevo solo da click en "RESET".</p>
             </div>
 </div>
 
 
 <!--Creamos un espacio para elegir el offset-->
-        <div>
+        <div class="contenedor">
         <p class="texto"> NO. DE CLIENTE</p>
     <input class="caja" type="number" id="offset" name= "off"  min="1" max="100">
-    </div>
+</div>
 
   <!--Creamos espacio para ingresar mensaje-->
-      <section>
-        <form id="secretMessage" >
-      <p class="texto">RESERVACIÓN</p>
-      <textarea class="caja" rows="4" cols="50" id="boxMessage" name="box" ></textarea>
-    </form>
-    </section>
 
+<div class="contenedor">
+      <p class="texto">RESERVACIÓN</p>
+      <textarea class="caja" rows="4" cols="50" id="boxMessage"></textarea>
+<div class="cajaBoton">
     <!--Creamos un boton con la funcion para guardar el mensaje a cifrar-->
-      <div class="choose">
         <button class="button" id="a"> Cifrar</button>
         <!--Creamos un boton con la funcion para guardar el mensaje a descifrar-->
         <button class="button" id="b"> Descifrar</button>
       </div>
+      </div>
 
     <!--Creamos espacio para que devuelva el mensaje cifrado o descifrado-->
-    <section>
-      <form >
-    <p class="texto">Tu mensaje es: <br> <span id="message"></span> </p>
+    <div class="contenedor">
 
-  </form>
-  </section>
+    <p class="texto">CONFIDENCIAL <br>  </p>
+    <form class="respuesta">
+      <p><span id="message"></span></p>
+    </form>
+    <div class="cajaBttn">
+    <button class="button" id="reset" type="button"> RESET</button>
+    </div>
+
+  </div>
 
   <!--Creamos un boton para resetear-->
-  <div>
-  <button class="button" id="reset" type="button"> RESET</button>
-</div>
-</center>
+
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </div>

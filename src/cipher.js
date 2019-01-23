@@ -16,7 +16,7 @@ window.cipher = {
         let resultado = String.fromCharCode(formula);
         //que se sume la oración
         final +=resultado;
-      } else if(letra >=97 && letra<=122){
+      } else if (letra >=97 && letra<=122){
         //poner la formula para minusculas
         let formula = (letra - 97+espacios)%26+97;
         //obtener letra del descifrado
@@ -48,7 +48,7 @@ window.cipher = {
       let resultado = String.fromCharCode(formula);
       //que se sume la oración
       final +=resultado;
-    } else if(letra >=97 && letra<=122){
+    }else if(letra >=97 && letra<=122){
       //poner la formula para minusculas
       let formula = (letra - 122 - espacios)%26+122;
       //obtener letra del descifrado

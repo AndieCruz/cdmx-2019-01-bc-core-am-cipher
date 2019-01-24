@@ -1,15 +1,15 @@
 # Desarrollo del proyecto
 ## Descripción
 
-TripBack es una agencia de viajes que brinda servicios de primera calidad a sus clientes. Pero últimament las reservaciones se confuden y los clientes no están a gusto con los inconvenientes que están teniendo. Ya que los datos de sus clientes se confunden, duplican o pierden entre miles de datos que recopilan.
+TripBack es una agencia de viajes que brinda servicios de primera calidad a sus clientes. Pero últimamente las reservaciones se confuden y los clientes no están a gusto con los inconvenientes que están teniendo. Ya que los datos de sus clientes se confunden, duplican o pierden entre miles de datos que recopilan.
 
 
 ## Definición de objetivos
-+Que la agencia de viajes TripBack lleve una base de datos más segura y ordenada para sus clientes.
-+Evitar se confundir o perder las reservaciones.
-+El cliente reciba una atención personalizada.
-+Que al reservar un viaje sea de manera confiable.
-+Poder verificar que se haya hecho correctamente una reservación.
+* Que la agencia de viajes TripBack lleve una base de datos más segura y ordenada para sus clientes.
++ Evitar se confundir o perder las reservaciones.
++ El cliente reciba una atención personalizada.
++ Que al reservar un viaje sea de manera confiable.
++ Poder verificar que se haya hecho correctamente una reservación.
 
 ## Resolución del problema
 Con esta web app, el usuario (TripBack) puede llevar los datos de sus clientes de una manera confidencial haciendo que su base de datos sea confiable.
